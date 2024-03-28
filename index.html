@@ -13,8 +13,8 @@ const { proof, publicSignals } = await snarkjs.groth16.fullProve(
   { in: 10 }, 
   "ver_js/ver.wasm", 
   "ver_0000.zkey");
-console.log(publicSignals);
-console.log(proof);
+pub.innerText = publicSignals;
+pf.innerText = proof;
 }
 
 </script>
